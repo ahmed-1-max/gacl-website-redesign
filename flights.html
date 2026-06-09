@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights - Ghana Airports Company Limited (GACL)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional-styles.css">
+    <link rel="stylesheet" href="css/video-backgrounds.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="airport-guide.html">Airport Guide</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li class="logo">
+                            <a href="https://www.gacl.com.gh/" target="_blank">
+                                 <img src="images/gacl-logo.png" alt="GACL Logo" title="GACL">
+                            </a>
+                        </li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="covid.html">COVID-19 Update</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="videos/airpalne.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="container">
+            <h1>Flight Information</h1>
+            <p>Real-time flight schedules and information</p>
+        </div>
+    </section>
+
+    <!-- Flights Content -->
+    <section class="flights-content">
+        <div class="container">
+            <div class="flight-search">
+                <h2>Flight Search</h2>
+                <div class="search-form">
+                    <div class="form-group">
+                        <label for="departure">Departure Airport</label>
+                        <select id="departure">
+                            <option value="">Select Airport</option>
+                            <option value="ACC">Kotoka International Airport (ACC)</option>
+                            <option value="KMS">Kumasi Airport (KMS)</option>
+                            <option value="TML">Tamale Airport (TML)</option>
+                            <option value="NYI">Sunyani Airport (NYI)</option>
+                            <option value="HZO">Ho Airport (HZO)</option>
+                            <option value="WZA">Wa Airport (WZA)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="arrival">Arrival Airport</label>
+                        <select id="arrival">
+                            <option value="">Select Airport</option>
+                            <option value="ACC">Kotoka International Airport (ACC)</option>
+                            <option value="KMS">Kumasi Airport (KMS)</option>
+                            <option value="TML">Tamale Airport (TML)</option>
+                            <option value="NYI">Sunyani Airport (NYI)</option>
+                            <option value="HZO">Ho Airport (HZO)</option>
+                            <option value="WZA">Wa Airport (WZA)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <button class="btn-primary">Search Flights</button>
+                </div>
+            </div>
+
+            <div class="flight-schedules">
+                <h2>Today's Flights</h2>
+                <div class="schedule-tabs">
+                    <button class="tab-btn active">Departures</button>
+                    <button class="tab-btn">Arrivals</button>
+                </div>
+                
+                <div class="flight-list">
+                    <div class="flight-item">
+                        <div class="flight-time">
+                            <span class="time">06:30</span>
+                            <span class="status on-time">On Time</span>
+                        </div>
+                        <div class="flight-details">
+                            <div class="flight-number">KQ 500</div>
+                            <div class="route">Accra → Nairobi</div>
+                            <div class="airline">Kenya Airways</div>
+                        </div>
+                        <div class="flight-gate">
+                            <span class="gate">Gate A3</span>
+                        </div>
+                    </div>
+
+                    <div class="flight-item">
+                        <div class="flight-time">
+                            <span class="time">08:15</span>
+                            <span class="status delayed">Delayed</span>
+                        </div>
+                        <div class="flight-details">
+                            <div class="flight-number">ET 920</div>
+                            <div class="route">Accra → Addis Ababa</div>
+                            <div class="airline">Ethiopian Airlines</div>
+                        </div>
+                        <div class="flight-gate">
+                            <span class="gate">Gate B1</span>
+                        </div>
+                    </div>
+
+                    <div class="flight-item">
+                        <div class="flight-time">
+                            <span class="time">10:45</span>
+                            <span class="status on-time">On Time</span>
+                        </div>
+                        <div class="flight-details">
+                            <div class="flight-number">TK 789</div>
+                            <div class="route">Accra → Istanbul</div>
+                            <div class="airline">Turkish Airlines</div>
+                        </div>
+                        <div class="flight-gate">
+                            <span class="gate">Gate A1</span>
+                        </div>
+                    </div>
+
+                    <div class="flight-item">
+                        <div class="flight-time">
+                            <span class="time">12:20</span>
+                            <span class="status on-time">On Time</span>
+                        </div>
+                        <div class="flight-details">
+                            <div class="flight-number">AF 456</div>
+                            <div class="route">Accra → Paris</div>
+                            <div class="airline">Air France</div>
+                        </div>
+                        <div class="flight-gate">
+                            <span class="gate">Gate B2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flight-info">
+                <h2>Flight Information Services</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="images/flight-info.jpg" alt="Flight Information">
+                        </div>
+                        <div class="info-content">
+                            <h3>Flight Information Display</h3>
+                            <p>Real-time flight information displayed throughout the terminal for passenger convenience.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="images/customer-service.jpg" alt="Customer Service">
+                        </div>
+                        <div class="info-content">
+                            <h3>Information Desks</h3>
+                            <p>Dedicated information desks staffed by knowledgeable personnel to assist passengers.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="images/mobile-app.jpg" alt="Mobile App">
+                        </div>
+                        <div class="info-content">
+                            <h3>Mobile App</h3>
+                            <p>Download our mobile app for real-time flight updates and airport information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">→ About Us</a></li>
+                        <li><a href="management.html">→ Management</a></li>
+                        <li><a href="tenders.html">→ Tenders</a></li>
+                        <li><a href="airlines.html">→ Airlines</a></li>
+                        <li><a href="cargo-airlines.html">→ Cargo Airlines</a></li>
+                        <li><a href="policy.html">→ Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kotoka International Airport</h4>
+                    <ul>
+                        <li><a href="airports.html">→ Airports</a></li>
+                        <li><a href="flights.html">→ Flights</a></li>
+                        <li><a href="projects.html">→ Projects</a></li>
+                        <li><a href="security.html">→ Security</a></li>
+                        <li><a href="hotels.html">→ Hotels</a></li>
+                        <li><a href="charges.html">→ Charges</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Find us on social media</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ghanaairports/" class="social-link">Facebook</a>
+                        <a href="https://www.youtube.com/channel/UCjp0zYKi6mQ4m__s8Z48y3A" class="social-link">YouTube</a>
+                        <a href="https://twitter.com/gh_airports" class="social-link">Twitter</a>
+                        <a href="https://www.instagram.com/ghanaairports/" class="social-link">Instagram</a>
+                        <a href="https://www.gacl.com.gh/updated_guidelines/" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <h5>Do you have questions?<br>Contact us now</h5>
+                    <div class="contact-info">
+                        <p><strong>KA PMB 36 KIA Accra, Ghana</strong></p>
+                        <p><strong>Digital Address:</strong> GL – 125 - 6946</p>
+                        <p><strong>Phone:</strong> +233 (0) 302 550 612</p>
+                        <p><strong>Email:</strong> info@gacl.com.gh</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Student Information</h4>
+                    <div class="student-info">
+                        <div class="passport-image">
+                            <img src="images/passport.png" alt="Student Passport">
+                        </div>
+                        <div class="student-details">
+                            <p><strong>Name:</strong> Mohammed Aliefe Usman</p>
+                            <p><strong>Index No:</strong> BC/ITD/24/058</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GACL. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
