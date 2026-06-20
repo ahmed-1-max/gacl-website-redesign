@@ -1,0 +1,798 @@
+/* Additional Styles for Management, Tenders, Airlines, and Cargo Pages */
+
+/* Management Page Styles */
+.management-content {
+    padding: 60px 0;
+    background:rgba(248, 249, 250, 0.88);
+}
+
+.management-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.management-card {
+    background: #ffffffe0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s;
+}
+
+.management-card:hover {
+    transform: translateY(-5px);
+}
+
+.management-image {
+    flex: 0 0 120px;
+    margin-right: 25px;
+}
+
+.management-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0066cc;
+}
+
+.management-info {
+    flex: 1;
+}
+
+.management-info h3 {
+    color: #0066cc;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.management-info h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.management-info p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.management-details {
+    background: #ffffffe0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.management-details p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.management-details p:last-child {
+    margin-bottom: 0;
+}
+
+/* Organizational Structure */
+.organizational-structure {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.organizational-structure h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.structure-image {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.structure-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Tenders Page Styles */
+.tenders-content {
+    padding: 60px 0;
+    background:  #ffffffe0;
+}
+
+.tenders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.tender-card {
+    background: #ffffffe0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    padding: 25px;
+    transition: transform 0.3s;
+}
+
+.tender-card:hover {
+    transform: translateY(-5px);
+}
+
+.tender-card h3 {
+    color: #0066cc;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.tender-card p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.tender-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.tender-status.open {
+    background: #28a745;
+    color: #fff;
+}
+
+.tender-status.closed {
+    background: #dc3545;
+    color: #fff;
+}
+
+.tender-status.completed {
+    background: #17a2b8;
+    color: #fff;
+}
+
+/* Airlines Page Styles */
+.airlines-content {
+    padding: 60px 0;
+    background: #ffffffe0;
+}
+
+.airlines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.airline-card {
+    background: #ffffffe0;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    padding: 30px;
+    transition: transform 0.5s;
+}
+
+.airline-card:hover {
+    transform: translateY(-5px);
+}
+
+.airline-logo {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.airline-logo img {
+    width: 100%;
+    max-width: 160px;
+    height: 100px;
+    object-fit: contain;
+    background: #ffffffe0;
+    border: 1px solid #eaeaea;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.airline-info h3 {
+    color: #0066cc;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.airline-info p {
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* Cargo Airlines Page Styles */
+.cargo-airlines-content {
+    padding: 60px 0;
+    background: #ffffffe0;
+}
+
+.cargo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.cargo-card {
+    background: #ffffffe0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    padding: 25px;
+    transition: transform 0.3s;
+}
+
+.cargo-card:hover {
+    transform: translateY(-5px);
+}
+
+.cargo-logo {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cargo-logo img {
+    width: 100%;
+    max-width: 150px;
+    height: 80px;
+    object-fit: contain;
+    background: #ffffffe0;
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cargo-info h3 {
+    color: #0066cc;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cargo-info p {
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* Cargo Facilities */
+.cargo-facilities {
+    margin-top: 60px;
+}
+
+.cargo-facilities h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.facility-card {
+    background: #ffffffe0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+}
+
+.facility-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.facility-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.facility-info {
+    padding: 25px;
+}
+
+.facility-info h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.facility-info p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .management-grid, .tenders-grid, .airlines-grid, .cargo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .management-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .management-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .management-card, .tender-card, .airline-card, .cargo-card {
+        padding: 20px;
+    }
+    
+    .management-info h4 {
+        font-size: 1.2rem;
+    }
+    
+    .organizational-structure h2,
+    .cargo-facilities h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* --- Tenders Page Specific Styles --- */
+.tender-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tender-header h3 {
+    color: #0066cc;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.tender-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.tender-status.active {
+    background: #28a745;
+    color: #fff;
+}
+
+.tender-status.upcoming {
+    background: #ffc107;
+    color: #333;
+}
+
+.tender-status.closed {
+    background: #dc3545;
+    color: #fff;
+}
+
+.tender-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tender-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.tender-card:hover .tender-image img {
+    transform: scale(1.05);
+}
+
+.tender-details {
+    text-align: left;
+}
+
+.tender-details p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.tender-details p strong {
+    color: #333;
+}
+
+.tender-info {
+    margin-top: 60px;
+}
+
+.tender-info h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background: #ffffffe0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #ffffffe0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.info-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.info-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* --- Flights Page Specific Styles --- */
+.flight-search {
+    background: #ffffffe0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.flight-search h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group select,
+.form-group input {
+    padding: 12px 15px;
+    border: 2px solid #ffffffe0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    outline: none;
+    border-color: #0066cc;
+}
+
+.flight-schedules {
+    background: #ffffffe0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.flight-schedules h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.schedule-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: 2px solid #0066cc;
+    background: transparent;
+    color: #0066cc;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background: #0066cc;
+    color: #fff;
+}
+
+.flight-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.flight-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #ffffffe0;
+    border-radius: 8px;
+    border-left: 4px solid #0066cc;
+    transition: transform 0.3s;
+}
+
+.flight-item:hover {
+    transform: translateX(5px);
+}
+
+.flight-time {
+    flex: 0 0 120px;
+    text-align: center;
+}
+
+.time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status.on-time {
+    background: #28a745;
+    color: #fff;
+}
+
+.status.delayed {
+    background: #dc3545;
+    color: #fff;
+}
+
+.flight-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.flight-number {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.route {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.airline {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.flight-gate {
+    flex: 0 0 100px;
+    text-align: center;
+}
+
+.gate {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #0066cc;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.flight-info {
+    background: #ffffffe0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    padding: 30px;
+}
+
+.flight-info h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    text-align: center;
+    padding: 25px;
+    border-radius: 8px;
+    background: #ffffffe0;
+    transition: transform 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #ffffffe0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.info-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.info-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.info-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Tenders and Flights */
+@media (max-width: 768px) {
+    .tender-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .search-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .flight-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .flight-time,
+    .flight-details,
+    .flight-gate {
+        flex: none;
+        margin-left: 0;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .flight-search,
+    .flight-schedules,
+    .flight-info {
+        padding: 20px;
+    }
+    
+    .schedule-tabs {
+        flex-direction: column;
+    }
+    
+    .tab-btn {
+        text-align: center;
+    }
+    
+    .tender-card,
+    .info-card {
+        padding: 20px;
+    }
+} 
